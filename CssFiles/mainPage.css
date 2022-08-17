@@ -1,0 +1,547 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(../DishariPhotos/BackgroundImages/backgroundImage1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 3rem;
+    z-index: 0;
+    animation: backgroundImage 20s linear infinite;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: .3rem;
+    font-weight: 600;
+    margin-bottom: .2rem;
+    text-shadow: 1px 1px 2px black;
+}
+.heading .regNo{
+    margin-left: 1rem;
+}
+.heading a {
+    margin-left: 5px;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color .3s ease-in-out,color .3s ease-in-out;
+}
+.heading a{
+    margin-right: 1rem;
+    text-decoration: none;
+}
+.heading a:hover{
+    background-color: #03BFFF;
+    color: white;
+    text-shadow: none;
+}
+.myCredit {
+    width: 100%;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: .5rem 0rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.336);
+    position: fixed;
+    bottom: 0;
+    color: white;
+    z-index: 20;
+}
+
+.myCredit a {
+    margin-left: 5px;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color .3s ease-in-out,color .3s ease-in-out;
+    /* z-index: 20; */
+}
+
+.myCredit a:hover {
+    background-color: #03BFFF;
+    color: white;
+    text-shadow: none;
+}
+
+.navbar {
+    height: 5rem;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.253) 100%, grey 0%);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.rightSide {
+    width: 50%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    
+    margin: 0;
+}
+.rightSide .english{
+    font-size: 2.5rem;
+}
+
+.leftSide {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.leftSideList {
+    display: flex;
+    align-items: center;
+}
+
+.leftSideList a {
+    text-decoration: none;
+    color: white;
+    transition: color 500ms linear;
+}
+
+.leftSideList .menu{
+    list-style: none;
+    padding: .8rem 1.3rem;
+    font-size: 1.7rem;
+    color: white;
+    margin: 0px 5px;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+
+.leftSideList img {
+    height: 4.2rem;
+    border-radius: 50%;
+    margin: 1rem;
+    outline: 2px solid black;
+}
+
+.leftSide a:hover{
+    color: #dbd7d2;;
+}
+
+.headerHeading {
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 3px black;
+}
+.headingBangla{
+    width: 100%;
+    font-size: 4rem;
+    display: none;
+    text-align: center;
+    text-shadow: 4px 4px 3px black;
+    margin-bottom: 2rem;
+
+}
+.headerHeading h1{
+    text-align: center;
+}
+.rightSideLogo img{
+    display: none;
+    height: 4.2rem;
+    border-radius: 50%;
+    margin: 1rem;
+    margin-left: 0;
+    outline: 2px solid black;
+}
+.sidebar1{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 70%;
+    background-color: #fbceb1;
+    /* display: none; */
+}
+
+.sideList{
+    /* display: none; */
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.listDisplay{
+    display: none;
+}
+
+.sideList li{
+    list-style: none;
+    margin-top: 2rem;
+}
+.sideList li:hover{
+    color: #36454f;
+}
+.sideHeading{
+    outline: 2px solid black;
+    border-radius: 5px;
+    padding:5px 2px;
+    transition: outline .5s linear;
+    z-index: 20;
+    display: none;
+}
+
+.headingBtn .hide{
+    opacity: 0;
+}
+.headingBtn .part1{
+    transform: rotate(-45deg) translate(-30%,100%) ;
+    /* transform-origin: left; */
+
+    
+}
+.heading .part{
+    position: relative;
+}
+.headingBtn .part2{
+    transform: rotate(45deg) translate(-10%,80%) ;
+    
+    transform-origin: right;
+}
+.sideHeading .part{
+    height: 5px;
+    width: 30px;
+    background-color: black;
+    border-radius: 30px;
+    margin: 5px;
+    transition: background-color .5s linear;
+    
+}
+.sideHeading:hover{
+    outline:2px solid white;
+    cursor: pointer;
+}
+.sideHeading:hover .part{
+    background-color: white;
+}
+.content {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.hideBackground1{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 30%;
+    background-color: rgba(0, 0, 0, 0.541);
+    z-index: 9;
+    /* display: none; */
+}
+h1.eventHeading{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px black;
+    /* position: relative; */
+}
+h1.eventHeading::after{
+    content: '';
+    height: 5px;
+    margin-top: 10px;
+    margin: auto;
+    /* width: 50%; */
+    background-color: aqua;
+    display: block;
+    transform: scale(0);
+    border-radius: 7px;
+    /* transition: all 2s; */
+    animation: headingAnimation 4s ease-out infinite;
+}
+/* h1:hover::after{
+    transform: scale(1);
+} */
+@keyframes headingAnimation{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    70%{
+        transform: scale(1);
+
+    }
+}
+.container{
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 10rem;
+}
+.events22,.events21,.events20,.events19{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    background-color: #f5f5f5;
+    padding: 5rem 0;
+    border-radius: 10px;
+}
+.event{
+    height: 150px;
+    width: min(400px,40%);
+    outline: 1px solid black;
+    border-radius: 10px;
+    transition: transform .5s linear;
+    position: relative;
+}
+.event:hover{
+    cursor: pointer;
+    outline: 2px solid black;
+    transform: translate(-10px,-10px);
+}
+.event h2{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px black;
+    /* color: white; */
+    
+}
+.event img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    opacity: .9;
+}
+.hideBackgroundEvent{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.541);
+    z-index: 5;   
+    transition: background-color .5s linear;
+}
+.crossEvent{
+    opacity: 0;
+}
+.eventCross{
+    /* opacity: 0; */
+    position: fixed;
+    top: 6%;
+    right: 6%;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    z-index: 7;
+    opacity: 1;
+    transition: opacity 1000ms linear; 
+}
+.imageEvents{
+    width: min(70%,1100px);
+    height: 80vh;
+    background-color: white;
+    outline: 2px solid black;
+    margin: auto;
+    margin-top: 10%;
+    z-index: 9;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+.imageEvents img{
+    margin: 10px;
+    border-radius: 10px;
+    width: 30%;
+    /* height: 30%; */
+    object-fit: cover;
+    outline: 1px solid black;
+}
+.event h2{
+    font-weight: bolder;
+    color: white;
+}
+.container h1{
+    margin: 3rem 1rem;
+    text-align: center;
+    font-size: 3rem;
+}
+.about{
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.308)),url(../DishariPhotos/banner.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    height: 70vh;
+    margin: 10rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about h1{
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-shadow: 1px 1px 3px black;
+}
+
+.footer{
+    height: 40vh;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10rem;
+    background-color: rgba(0, 0, 0, 0.336);
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    /* z-index: 50; */
+}
+.footer .fcontent{
+    margin: .5rem;
+    font-size: 1.5rem;
+}
+.footer .icons{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    margin: .5rem;
+    cursor: pointer;
+}
+.footer .icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.footer .icons a{
+    text-decoration: none;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    margin: 1rem;
+}
+.gotop{
+    background-color: rgba(0, 0, 0, 0.466);
+    display: inline;
+    padding: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    /* position: fixed;
+    bottom: 10%;
+    left: 50%; */
+    cursor: pointer;
+    color: white;
+}
+@media screen and (max-width: 1800px) {
+    .leftSide{
+        display: none;
+    }
+    .rightSide{
+        width: 100%;
+    }
+    .rightSideLogo img{
+        display: flex;
+    }
+    .sideHeading{
+        display: block;
+    }
+    
+}
+@media screen and (max-width: 1030px){
+    html{
+        font-size: 80%;
+    }
+    .heading{
+        margin-top: .1rem;
+    }
+    
+    /* .bangla,.middleClass{
+        display: none;
+    } */
+    
+}
+@media screen and (max-width: 850px){
+    /* html{
+        font-size: 80%;
+    } */
+    
+    .bangla,.middleClass{
+        display: none;
+    } 
+    .headingBangla{
+        display: block;
+    }
+    
+}
+@media screen and (max-width: 545px){
+    html{
+        font-size: 70%;
+    }
+    
+}
+@media screen and (max-width: 477px){
+    html{
+        font-size: 60%;
+    }
+    .heading{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }  
+}
+@media screen and (max-width: 420px){
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        margin-top: -.1rem;
+    }
+    .sideHeading{
+        padding: 0;
+    }
+    .sideHeading .part{
+        width: 24px;
+    }
+}
+@media screen and (max-width: 340px){
+    html{
+        font-size: 40%;
+    }
+    .sideHeading .part{
+        margin: 5px;
+        width: 20px;
+        height: 4px;
+    }
+}
